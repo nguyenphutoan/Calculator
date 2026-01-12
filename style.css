@@ -1,3 +1,19 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 5px;
+    background-color: #948fe5;
+    border:solid;
+    padding: 15px;
+    width: 100vw;
+    border-radius: 15px;
+    height: 100vh;
+}
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -7,15 +23,15 @@
     background-color: #948fe5;
     border:solid;
     padding: 15px;
-    width: 450px;
+    width: 250px;
     border-radius: 15px;
-    height: 650px;
+    height: 350px;
 }
 
 h1 {
     align-self:flex-start;
     margin: 0px;
-    font-size: 25px;
+    font-size: 15px;
     font-style: italic;
     font-family:'Segoe UI', sans-serif;
     color:rgb(10, 13, 107)
@@ -24,10 +40,10 @@ h1 {
 .screen {
     background-color: black;
     border: solid;
-    border-color: rgb(255, 255, 255);
+    border-color: white;
     padding: 10px;
     width: 100%;
-    height: 15vw;
+    height: 30%;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
@@ -40,21 +56,21 @@ h1 {
     word-break: break-all;
     align-self:flex-start;
     font-family: monospace, sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    max-height: 50px;
+    font-size: 15px;
+    line-height: 20px;
     overflow: hidden;
 }
 #output {
     color:white;
     align-self:flex-end;
     font-family: monospace, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .btn-group{
     display: grid;
     width: 100%;
+    height: 50%;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-items: space-between;
@@ -65,7 +81,7 @@ h1 {
 
 .btn-input {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     justify-items: center;
     align-items: center;
 }
@@ -88,8 +104,8 @@ h1 {
 }
 
 .btn {
-    width: 100px;
-    height: 80px;
+    width: 90%;
+    height:90%;
     font-weight: bold;
     font-size: 18px;
     margin: 5px;
@@ -106,7 +122,8 @@ h1 {
 
 .btn:active {
     background-color:rgb(198, 144, 78);
-    box-shadow: -2px -2px 2px rgb(244, 219, 173) inset;
+    box-shadow: -2px -2px 2px rgb(244, 219, 173) inset,
+        2px 2px 2px rgb(105, 70, 6) inset;
 }
 #clear {
     background-color:rgb(241, 67, 48);
@@ -119,7 +136,8 @@ h1 {
 }
 #clear:active {
     background-color:rgb(171, 48, 34);
-    box-shadow: -2px -2px 2px rgb(244, 181, 173) inset;
+    box-shadow: -2px -2px 2px rgb(244, 181, 173) inset,
+        2px 2px 2px rgb(121, 28, 18) inset;
 }
 
 #equals {
@@ -133,7 +151,8 @@ h1 {
 }
 #equals:active {
     background-color:rgb(16, 167, 43);
-    box-shadow: -2px -2px 2px rgb(147, 236, 123) inset;
+    box-shadow: -2px -2px 2px rgb(147, 236, 123) inset,
+        2px 2px 2px rgb(6, 103, 24) inset;
 }
 
 .btn-operators button {
@@ -147,5 +166,6 @@ h1 {
 }
 
 .btn-operators button:active {
-    background-color:rgb(177, 106, 71);
+    background-color:rgb(154, 77, 39),
+        2px 2px 2px rgb(121, 28, 18) inset;
 }

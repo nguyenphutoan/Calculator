@@ -35,7 +35,7 @@ function getPreAns() {
 function result() {
     let content = inputDisplay.innerText;
     
-    let fixContent = content.replaceAll("×", "*").replaceAll("÷", "/");
+    let fixContent = content.replaceAll("×", "*").replaceAll("÷", "/").replaceAll("Mod", "%");
     
     try {
         let answer = eval(fixContent);

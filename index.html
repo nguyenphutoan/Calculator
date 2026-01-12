@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "vi">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Calculator</title>
+        <link rel="icon" type="image/png" href="CalculatorIcon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculator</h1>
+            <div class="screen">
+                <div id="input"></div>
+                <div id="output"></div>
+            </div>
+            <div class="btn-group">
+                <div class="btn-input">
+                    <button id="1" class="btn" type="button" onclick="addInput('1')">1</button>
+                    <button id="2" class="btn" type="button" onclick="addInput('2')">2</button>
+                    <button id="3" class="btn" type="button" onclick="addInput('3')">3</button>
+                    <button id="4" class="btn" type="button" onclick="addInput('4')">4</button>
+                    <button id="5" class="btn" type="button" onclick="addInput('5')">5</button>
+                    <button id="6" class="btn" type="button" onclick="addInput('6')">6</button>
+                    <button id="7" class="btn" type="button" onclick="addInput('7')">7</button>
+                    <button id="8" class="btn" type="button" onclick="addInput('8')">8</button>
+                    <button id="9" class="btn" type="button" onclick="addInput('9')">9</button>
+                    <button id="0" class="btn" type="button" onclick="addInput('0')">0</button>
+                    <button id="percent" class="btn" type="button" onclick="addInput('%')">%</button>
+                    <button id="point" class="btn" type="button" onclick="addInput('.')">.</button>
+                </div>
+                <div class="btn-operators">
+                    <button id="plus" class="btn" type="button" onclick="addInput('+')">+</button>
+                    <button id="minus" class="btn" type="button" onclick="addInput('-')">-</button>
+                    <button id="times" class="btn" type="button" onclick="addInput('×')">×</button>
+                    <button id="divided" class="btn" type="button" onclick="addInput('÷')">÷</button>
+                </div>
+                <div class="btn-others">
+                    <button id="clear" class="btn" type="button" onclick="clearScreen()">AC</button>
+                    <button id="delete" class="btn" type="button" onclick="del()">DEL</button>
+                    <button id="answer" class="btn" type="button" onclick="getPreAns()">ANS</button>
+                    <button id="equals" class="btn" type="button" onclick="result()">=</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

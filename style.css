@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 5px;
+    background-color: #948fe5;
+    border:solid;
+    padding: 15px;
+    width: 450px;
+    border-radius: 15px;
+    height: 650px;
+}
+
+h1 {
+    align-self:flex-start;
+    margin: 0px;
+    font-size: 25px;
+    font-style: italic;
+    font-family:'Segoe UI', sans-serif;
+    color:rgb(10, 13, 107)
+}
+
+.screen {
+    background-color: black;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;
+    height: 15vw;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    box-sizing: border-box;
+}
+
+#input {
+    color:white;
+    word-break: break-all;
+    align-self:flex-start;
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    max-height: 50px;
+    overflow: hidden;
+}
+#output {
+    color:white;
+    align-self:flex-end;
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+}
+
+.btn-group{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: space-between;
+    background-color: rgb(238, 142, 53);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn-input {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn-operators {
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+}
+
+.btn-others {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    grid-column:  1/3;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+.btn {
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 8px;
+    border:0;
+    box-shadow: 2px 2px 2px rgb(107, 71, 4),
+        2px 2px 2px rgb(244, 219, 173) inset;
+    background-color:rgb(249, 185, 107);
+}
+
+.btn:hover {
+    background-color:rgb(229, 166, 89);
+}
+
+.btn:active {
+    background-color:rgb(198, 144, 78);
+    box-shadow: -2px -2px 2px rgb(244, 219, 173) inset;
+}
+#clear {
+    background-color:rgb(241, 67, 48);
+    box-shadow: 2px 2px 2px rgb(107, 71, 4),
+        2px 2px 2px rgb(244, 181, 173) inset;
+}
+
+#clear:hover {
+    background-color:rgb(206, 58, 42);
+}
+#clear:active {
+    background-color:rgb(171, 48, 34);
+    box-shadow: -2px -2px 2px rgb(244, 181, 173) inset;
+}
+
+#equals {
+    background-color:rgb(15, 205, 50);
+    box-shadow: 2px 2px 2px rgb(107, 71, 4),
+        2px 2px 2px rgb(147, 236, 123) inset;
+}
+
+#equals:hover {
+    background-color:rgb(14, 176, 43);
+}
+#equals:active {
+    background-color:rgb(16, 167, 43);
+    box-shadow: -2px -2px 2px rgb(147, 236, 123) inset;
+}
+
+.btn-operators button {
+    background-color:rgb(244, 146, 97);
+    box-shadow: 2px 2px 2px rgb(107, 71, 4),
+        2px 2px 2px rgb(240, 187, 166) inset;
+}
+
+.btn-operators button:hover {
+    background-color:rgb(212, 127, 85);
+}
+
+.btn-operators button:active {
+    background-color:rgb(177, 106, 71);
+}

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -8,9 +8,9 @@
     background-color: #948fe5;
     border:solid;
     padding: 15px;
-    width: 600px;
+    width: 570px;
     border-radius: 15px;
-    height: 750px;
+    height: 670px;
 }
 }
 
